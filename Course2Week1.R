@@ -42,3 +42,18 @@ dget("puttingTest.R")
 dump(c("x","y"), file = "dumpingTest.R")
 rm(x,y)
 source("dumpingTest.R")
+
+
+con <- url("https://uk.finance.yahoo.com/quote/GBPEUR=X?ltr=1")
+
+wb <- readLines(con)
+
+head(wb)
+
+
+u <- c(1,2,NA,45,NA)
+d <- c(1,NA,3,45,NA)
+good <- complete.cases(u,d)
+
+u <- u[good]
+d <- d[good]
