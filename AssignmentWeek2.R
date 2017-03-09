@@ -24,3 +24,9 @@ complete("specdata", c(2, 4, 8, 10, 12))
 complete("specdata", 30:25)
 
 complete("specdata", 3)
+
+# PART 3
+source("corr.R")
+
+cr <- corr("specdata", 150)
+head(cr)
