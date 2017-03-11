@@ -2,6 +2,10 @@ rm(list = ls())
 
 setwd("D:/GithubLocal/datasciencecoursera/")
 
+source("pollutantmean.R")
+source("corr.R")
+source("complete.R")
+
 # PART 1
 
 source("pollutantmean.R")
