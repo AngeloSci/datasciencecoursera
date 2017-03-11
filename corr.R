@@ -1,7 +1,7 @@
-# PART 1
+# PART 3
 
 corr <- function(directory, threshold=0){
-    
+
 
     id = 1:332
     lnid <- length(id)
@@ -44,11 +44,12 @@ corr <- function(directory, threshold=0){
             #cond2 <- complete.cases(tmp_data)
             #tmp_data <- tmp_data[cond2,]
             
-            corr_vec[c_idx] <- cor(tmp_data[,2:3], use = "complete.obs")
+            tmpcor <-  cor(tmp_data[,2:3], use = "complete.obs")
+            corr_vec[c_idx] <- tmpcor[1,2]
             c_idx = c_idx +1
         }
         
     }
-    
+    return(corr_vec)
     
 }
