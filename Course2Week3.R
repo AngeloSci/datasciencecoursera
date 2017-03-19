@@ -44,3 +44,21 @@ interaction(f1,f2)
 str(split(x,list(f1,f2)))
 
 str(split(x,list(f1,f2),drop = T))
+
+
+mean(z)
+traceback()
+
+lm(z-p)
+traceback()
+
+debug(lm)
+lm(z-p)
+
+#options(error = recover)
+mean(z-p)
+
+## QUIZ 
+
+
+
