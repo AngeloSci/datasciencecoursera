@@ -33,3 +33,22 @@ summary(s)
 
 #SIMULATION : generation of random numbers
 
+set.seed(1)
+
+rnorm(10,0,2)
+rnorm(10,0,2)
+
+set.seed(1)
+
+rnorm(10,0,2)
+rnorm(10,0,2)
+
+#SIMULATION : Linear Model
+
+set.seed(20)
+x <- rnorm(100)
+e <- rnorm(100,0,2)
+b0 <- 0.5
+b1<- 2
+y<- b0 + b1*x +e
+
