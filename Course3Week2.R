@@ -95,3 +95,19 @@ names(pg2)
 
 google = handle("http://google.com")
 pg1 = GET(handle=google,path="/")
+
+
+
+##### API
+
+myapp = oauth_app("twitter",key="",secret="")
+sig=sign_oauth1.0(myapp, token ="",token_secret = "")
+homeTL = GET("https://api.twitter.com/1.1/statuses/home_timeline.json", sig)
+
+json1 = content(homeTL)
+#to get it as df
+json2 = jsonlite::fromJSON(toJSON(json1))
+
+
+### OTHER SOURCES
+
