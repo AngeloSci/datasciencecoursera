@@ -1,7 +1,6 @@
 ### QUESTION 1
 
 library(httr)
-library(Rcpp)
 library(httpuv)
 
 # 1. Find OAuth settings for github:
